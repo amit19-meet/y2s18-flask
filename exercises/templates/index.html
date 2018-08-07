@@ -6,7 +6,32 @@
 
     	</head>
         	<body>
-            <h1> My favorite sport is DANCING!</h1>
+        	<h1> FAVORITE SPORT!!!</h1>
+        	<div id="intire_page">
+        		{% if likes_same_sport== True %}
+        		<img src="https://i.pinimg.com/originals/42/43/d4/4243d49b8c70a86566c9e4b1dea7592b.jpg">
+            	<h2> My favorite sport is DANCING!</h2>
+            	<p> I've been dancing since I was 10 years old. I've loved it since I started it and it is still one of my favorite things to do. I feel free and happy when I dance</p>
+            
+            
+            <div id="inside_the_page">
+            	<p> My Favorite dancers are: </p>
+          		<ul>
+                	{% for dancer in dancers %}
+                	<li> {{dancer}} </li>
+                	{% endfor %}
+            	</ul>
+            </div>
+            
+            {% else %}
+            <img src="https://vignette.wikia.nocookie.net/pbesantivirusisterrible/images/0/0c/AWW_TOO_BAD.png/revision/latest?cb=20160814003658">
+            <h2> In My opinion, the best sport is DANCING!</h2>
             <p> I've been dancing since I was 10 years old. I've loved it since I started it and it is still one of my favorite things to do. I feel free and happy when I dance</p>
+            {% endif %}
+            </div>
+
+            
+
+
         	</body>
     </html>

@@ -3,7 +3,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_page():
-	return render_template("index.html")
+	dancers=["perrie pirouette", "alex flex", "split spielberg"]
+	return render_template("index.html", dancers=dancers, likes_same_sport= False)
     
 
 if __name__ == '__main__':

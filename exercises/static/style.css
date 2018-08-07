@@ -1,4 +1,15 @@
 /* Put your CSS Styling here! */
 body {
-	background-color: green;
+	background-color: pink;
+}
+div#intire_page{
+	background-color: lightblue;
+}
+div#inside_the_page{
+	background-color: blue;
+}
+h1 {
+	border: 10px dotted purple;
+	padding: 25px 100px;
+	margin: 50px 300px;
 }
